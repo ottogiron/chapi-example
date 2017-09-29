@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/ottogiron/chapi/server"
 )
@@ -20,8 +21,13 @@ func handleHello(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	var port string
 
-	connectionString := ":80"
+	if port = os.Getenv("PORT"); port == "" {
+		port = "8000"
+	}
+
+	connectionString := ":" + port
 	s := server.NewServer()
 	s.Register(&HelloController{})
 	err := s.Run(connectionString)
