@@ -21,7 +21,7 @@ func handleHello(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
-	connectionString := ":8000"
+	connectionString := ":80"
 	s := server.NewServer()
 	s.Register(&HelloController{})
 	err := s.Run(connectionString)
