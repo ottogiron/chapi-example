@@ -1,0 +1,16 @@
+hash: a8da9356dfb69af8520eeb4affafd4bb1fafb02e7623509e0ed878319639f6db
+updated: 2017-09-29T11:55:31.761945375-06:00
+imports:
+- name: github.com/codegangsta/negroni
+  version: 423835657b6c73d9d894487168624f4ae7b1cc64
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: 3f19343c7d9ce75569b952758bd236af94956061
+- name: github.com/ottogiron/chapi
+  version: 6122ca1fc6229766146327349f9408e800baf96b
+  subpackages:
+  - server
+- name: github.com/satori/go.uuid
+  version: 5bf94b69c6b68ee1b541973bb8e1144db23a194b
+testImports: []
