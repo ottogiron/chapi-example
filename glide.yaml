@@ -1,5 +1,0 @@
-package: github.com/ottogiron/chapi-example
-import:
-- package: github.com/ottogiron/chapi
-  subpackages:
-  - server
